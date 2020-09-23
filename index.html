@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pizzaria Order</title>
+    </head>
+    <body>
+        <header style="color: crimson;" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"><h1>Pizza Order</h1></header>
+        <h4>Check boxes of what you would like to order</h4>
+
+        <p>
+            <form action="data.json" method="post">
+
+                <fieldset>
+                    <legend>Pizza Order</legend>
+                    
+                    <fieldset>
+                        <legend>Crust</legend>
+                                <ul>
+                                    <li><label for="pizzaCrust1"></label><input type="radio" id="pizzaCrust1" name="Drink">Thick</li>
+                                    <li><label for="pizzaCrust2"></label><input type="radio" id="pizzaCrust2" name="Drink">Thin</li>
+                                    <li><label for="pizzaCrust3"></label><input type="radio" id="pizzaCrust3" name="Drink">Gluten Free</li>
+                                    <li><label for="pizzaCrust4"></label><input type="radio" id="pizzaCrust4" name="Drink">Deepdish</li>
+                                </ul>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Sauce</legend>
+                            <ul>
+                                <li><label for="pizzaCrust1"></label><input type="radio" id="Sauce1" name="Sauce">Red</li>
+                                <li><label for="pizzaCrust2"></label><input type="radio" id="Sauce2" name="Sauce">White</li>
+                            </ul>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Toppings</legend>
+                            <h4><i>All pizzas come with cheese.</i></h4>
+                            <ul>
+                                <li><input type="checkbox" id="Topping1" name="User.Topping1">Extra Cheese</li>
+                                <li><input type="checkbox" id="Topping2" name="User.Topping2">Pepperoni</li>
+                                <li><input type="checkbox" id="Topping3" name="User.Topping3">Ham</li>
+                                <li><input type="checkbox" id="Topping4" name="User.Topping4">Pinapple</li>
+                            </ul>
+                    </fieldset>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Extras</legend>
+                        <fieldset>
+                            <legend>Drinks</legend>
+                                <ul>
+                                    <li><label for="drink_1"><input type="radio" id="drink_1" name="DrinkSelection" value="A">Coke</label></li>
+                                    <li><label for="drink_2"><input type="radio" id="drink_2" name="DrinkSelection" value="A">Sprite</label></li>
+                                    <li><label for="drink_3"><input type="radio" id="drink_3" name="DrinkSelection" value="A">Fanta</label></li>
+                                    <li><label for="drink_4"><input type="radio" id="drink_4" name="DrinkSelection" value="A">Gatorade</label></li>
+                                </ul>
+                        </fieldset>
+                </fieldset>
+
+                <button type="submit">Place Order</button>
+
+            </form>
+        </p>
+
+    </body>
+</html>
